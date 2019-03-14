@@ -192,7 +192,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  mineChance: 0.15
+  mineChance: 0.11
   flagColor: {r: 1, g: 0.0141509175, b: 0.0141509175, a: 1}
   rend: {fileID: 23725221232326836}
   isFlagged: 0

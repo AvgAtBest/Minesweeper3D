@@ -17,7 +17,9 @@ public class Grid : MonoBehaviour
     }
     Tile SpawnTile(Vector3 pos)
     {
-        GameObject clone = Instantiate(tilePrefab);
+        GameObject clone = Instantiate(tilePrefab, transform);
+
+
 
         clone.transform.position = pos;
 
@@ -28,7 +30,7 @@ public class Grid : MonoBehaviour
     private void Update()
     {
         MouseOver();
-        UpdateGrid();
+
     }
     void GenerateTiles()
     {
@@ -56,7 +58,7 @@ public class Grid : MonoBehaviour
                     //spawn the tile
                     Tile newTile = SpawnTile(pos);
                     //set transform of the tiles to the grid
-                    newTile.transform.SetParent(transform);
+
                     //store its array coords
                     newTile.x = x;
                     newTile.y = y;
